@@ -59,6 +59,7 @@ export function AuthProvider(props: any) {
 
     async function loginGoogle() {
 
+
         try {
             setLoading(true)
             const resp = await firebase.auth().signInWithPopup(

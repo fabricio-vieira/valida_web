@@ -1,7 +1,7 @@
 import AuthInput from "@/components/auth/AuthInput";
 import Image from "next/image";
 import { useState } from "react";
-import ImgCar from '../assets/img-car3.jpg'
+import ImgAuthPage from '../assets/img-restaurant2.jpg'
 import { WarnIcon } from "@/components/icons";
 import useAuth from "@/data/hook/useAuth";
 
@@ -51,7 +51,7 @@ export default function Authentication() {
 
             <div className="hidden md:block md:w-1/2 lg:w-2/3 h-screen relative">
                 <Image
-                    src={ImgCar}
+                    src={ImgAuthPage}
                     layout="fill"
                     objectFit="cover"
                     alt="Imagem de Tela de Input"
