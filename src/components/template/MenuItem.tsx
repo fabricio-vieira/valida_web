@@ -12,12 +12,14 @@ export default function MenuItem(props: MenuItemProps) {
     function renderLink() {
         return (
             <div className={` 
-                flex flex-col justify-center items-center w-20 h-20 
-                text-gray-600  dark:text-gray-300
+                flex justify-center sm:justify-start items-center sm:w-40  w-20 h-14 
+                text-gray-200  dark:text-gray-300 pl-4 
+                 bg-gradient-to-r from-indigo-800 to-blue-950
+                 hover:text-cyan-400 hover:border-l-2 hover:border-cyan-300
                 ${props.className}`}>
                 {props.icon}
 
-                <span className={`text-xs font-light text-center`}>
+                <span className={`hidden sm:flex text-base font-sans text-left ml-2`}>
                     {props.text}
                 </span>
             </div>

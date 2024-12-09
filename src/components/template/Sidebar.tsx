@@ -7,21 +7,24 @@ export default function Sidebar() {
     const { logout } = useAuth()
 
     return (
-        <aside className="flex flex-col bg-gray-200 text-gray-700 dark:bg-gray-900">
+        <aside className={`
+            flex flex-col
+            text-gray-700 dark:bg-gray-900
+             bg-gradient-to-r from-indigo-800 to-blue-950
+            `}>
 
             <div className={`
-                    flex flex-col items-center justify-center
-                    bg-gradient-to-r from-indigo-500 to-purple-800
-                    h-20 w-20
+                    flex flex-col items-center justify-center w-20                   
+                    h-32 sm:w-40
                     `}>
                 <Logo />
             </div>
-            <ul className="flex-grow">
+            <ul className="flex flex-col h-full">
 
                 <MenuItem url="/" text="Inicio" icon={HomeIcon} />
                 <MenuItem url="/companies" text="Cantinas" icon={CompanyIcon} />
-                <MenuItem url="/users" text="Usuários" icon={UsersIcon} />
-                <MenuItem url="/departments" text="Centro de Custo" icon={DepartmentIcon} />
+                <MenuItem url="/register" text="Cadastro" icon={UsersIcon} />
+                <MenuItem url="/departments" text="Info" icon={DepartmentIcon} />
                 <MenuItem url="/reports" text="Relatórios" icon={ReportsIcon} />
                 <MenuItem url="/terminal" text="Terminais" icon={TerminalIcon} />
                 <MenuItem url="/settings" text="Ajustes" icon={SettingsIcon} />

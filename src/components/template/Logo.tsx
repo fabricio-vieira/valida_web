@@ -1,17 +1,22 @@
 export default function Logo() {
     return (
-        <div className={`
-            flex flex-col items-center justify-center
-            h-12 w-12 rounded-full bg-white
+        <div className="flex w-full items-center justify-center">
+            <div className={`
+            flex items-center justify-end
+            h-8 w-8 bg-white rounded-l-xl
         `}>
-
-            <div className=" h-3 w-3 rounded-full bg-orange-600 mb-0.5"></div>
-            <div className=" flex mt-0.5">
-                <div className=" h-3 w-3 rounded-full bg-blue-600 mr-0.5"></div>
-                <div className=" h-3 w-3 rounded-full bg-green-500 ml-0.5"></div>
+                <h1 className="font-extrabold">V</h1>
+            </div>
+            <div className={`
+               flex items-center justify-start
+               h-8 w-16 rounded-r-xl pl-0.5
+              border-white border               
+               `}>
+                <h1 className="font-light text-white">alida</h1>
             </div>
 
         </div>
+
     )
 
 }
